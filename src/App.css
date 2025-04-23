@@ -1,0 +1,162 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar completo */
+.sidebar {
+  width: 200px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* Caja azul que agrupa los botones de cámara */
+.menu-box {
+  background-color: #4169e1;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Título del menú */
+.menu-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Botones del menú */
+.menu-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-button:hover {
+  background-color: #2e2e3e;
+}
+
+/* Parte inferior izquierda: Movimiento + engranaje */
+.bottom-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movimiento {
+  background-color: #4169e1;
+  width: 100%;
+  font-weight: bold;
+}
+
+.settings-icon {
+  font-size: 1.8rem;
+  padding: 15px 0;
+}
+
+/* Contenido principal */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #00aaff;
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.camera-grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #000;
+}
+
+.camera-box {
+  background-color: #a0a0a0;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: 1px solid black;
+}
+
+.camara-grande {
+  flex-grow: 1;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.grande {
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.volver-btn-container {
+  padding: 10px;
+  text-align: left;
+}
+
+.volver-btn {
+  background-color: #002b5c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.volver-btn:hover {
+  background-color: #004080;
+}
+
+.grabaciones {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.grabaciones ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grabaciones li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #333;
+  border-left: 5px solid #00aaff;
+}
